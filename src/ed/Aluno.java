@@ -23,6 +23,10 @@ public class Aluno {
 	}
 
 	@Override
+	public String toString() {
+		return "Aluno [nome=" + nome + "]";
+	}
+	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
