@@ -7,7 +7,13 @@ public class Vector {
 	
 	
 	public void adiciona(Aluno aluno) {
-		
+	
+		for (int i = 0; i < this.alunos.length; i++) {
+			if (this.alunos[i] == null) {
+				this.alunos[i] = aluno;
+				break;
+			}
+		}
 	}
 	
 	public void adiciona(int posicao, Aluno aluno) {
